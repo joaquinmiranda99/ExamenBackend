@@ -1,0 +1,29 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "usuario",
+      "otherEntityName": "usuario",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "firstname",
+      "otherEntityRelationshipName": "loan"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "total",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "changelogDate": "20200825210306",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "loan",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "pagination"
+}
